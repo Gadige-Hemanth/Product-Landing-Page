@@ -30,6 +30,3 @@ This project demonstrates clean UI design, column-based layout using Flexbox, an
 - Google Fonts
 - Responsive Media Queries
 
----
-
-## 📂 Project Structure
