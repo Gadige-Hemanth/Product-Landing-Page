@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00f2fe;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.hero-text button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #00f2fe, #4facfe);
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-text button:hover {
+    transform: scale(1.05);
+}
+
+.hero-image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 8%;
+}
+
+.feature-box {
+    width: 30%;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.4s;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.feature-box img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+/* PRICING */
+.pricing {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 8%;
+}
+
+.price-box {
+    width: 30%;
+    padding: 40px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.price-box:hover {
+    transform: scale(1.05);
+}
+
+.price-box img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.price-box p {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2a5298;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero,
+    .features,
+    .pricing {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text,
+    .feature-box,
+    .price-box {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .hero-image img {
+        width: 280px;
+        height: 280px;
+    }
+}
